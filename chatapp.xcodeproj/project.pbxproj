@@ -11,6 +11,13 @@
 		9F1BE0BD1F1EF73400D71A64 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0BB1F1EF73400D71A64 /* SWRevealViewController.m */; };
 		9F1BE0C21F1EF98C00D71A64 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0C11F1EF98C00D71A64 /* ChatVC.swift */; };
 		9F1BE0C41F1EF99E00D71A64 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0C31F1EF99E00D71A64 /* ChannelVC.swift */; };
+		9F1BE0C61F1EFE2A00D71A64 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0C51F1EFE2A00D71A64 /* GradientView.swift */; };
+		9F1BE0C91F1F051900D71A64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0C81F1F051900D71A64 /* Constants.swift */; };
+		9F1BE0CB1F1F09F100D71A64 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0CA1F1F09F100D71A64 /* LoginVC.swift */; };
+		9F1BE0CD1F1F0B3600D71A64 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0CC1F1F0B3600D71A64 /* CreateAccountVC.swift */; };
+		9F1BE0D01F1F5DEA00D71A64 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0CF1F1F5DEA00D71A64 /* AuthService.swift */; };
+		9F1BE0D21F20352800D71A64 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0D11F20352800D71A64 /* RoundedButton.swift */; };
+		9F1BE0D41F20419200D71A64 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0D31F20419200D71A64 /* UserDataService.swift */; };
 		9FD8800E1F1EDD910045A67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8800D1F1EDD910045A67E /* AppDelegate.swift */; };
 		9FD880101F1EDD910045A67E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8800F1F1EDD910045A67E /* ViewController.swift */; };
 		9FD880131F1EDD910045A67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD880111F1EDD910045A67E /* Main.storyboard */; };
@@ -26,6 +33,13 @@
 		9F1BE0BB1F1EF73400D71A64 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/team-devslopes-app-smack-fe494f15fe51/Smack/Supporting Files/SWRevealViewController.m"; sourceTree = "<group>"; };
 		9F1BE0C11F1EF98C00D71A64 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		9F1BE0C31F1EF99E00D71A64 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		9F1BE0C51F1EFE2A00D71A64 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9F1BE0C81F1F051900D71A64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9F1BE0CA1F1F09F100D71A64 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9F1BE0CC1F1F0B3600D71A64 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		9F1BE0CF1F1F5DEA00D71A64 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9F1BE0D11F20352800D71A64 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		9F1BE0D31F20419200D71A64 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		9FD8800A1F1EDD910045A67E /* chatapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD8800D1F1EDD910045A67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD8800F1F1EDD910045A67E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +85,8 @@
 			children = (
 				9F1BE0C11F1EF98C00D71A64 /* ChatVC.swift */,
 				9F1BE0C31F1EF99E00D71A64 /* ChannelVC.swift */,
+				9F1BE0CA1F1F09F100D71A64 /* LoginVC.swift */,
+				9F1BE0CC1F1F0B3600D71A64 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -78,6 +94,8 @@
 		9F1BE0BF1F1EF95500D71A64 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F1BE0C51F1EFE2A00D71A64 /* GradientView.swift */,
+				9F1BE0D11F20352800D71A64 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +105,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9F1BE0C71F1F050D00D71A64 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9F1BE0C81F1F051900D71A64 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9F1BE0CE1F1F5DDC00D71A64 /* AuthServices */ = {
+			isa = PBXGroup;
+			children = (
+				9F1BE0CF1F1F5DEA00D71A64 /* AuthService.swift */,
+				9F1BE0D31F20419200D71A64 /* UserDataService.swift */,
+			);
+			path = AuthServices;
 			sourceTree = "<group>";
 		};
 		9FD880011F1EDD910045A67E = {
@@ -110,6 +145,8 @@
 		9FD8800C1F1EDD910045A67E /* chatapp */ = {
 			isa = PBXGroup;
 			children = (
+				9F1BE0CE1F1F5DDC00D71A64 /* AuthServices */,
+				9F1BE0C71F1F050D00D71A64 /* Utilities */,
 				9F1BE0C01F1EF95900D71A64 /* Model */,
 				9F1BE0BF1F1EF95500D71A64 /* View */,
 				9F1BE0BE1F1EF94F00D71A64 /* Controller */,
@@ -260,7 +297,14 @@
 			files = (
 				9F1BE0C21F1EF98C00D71A64 /* ChatVC.swift in Sources */,
 				9F1BE0C41F1EF99E00D71A64 /* ChannelVC.swift in Sources */,
+				9F1BE0CB1F1F09F100D71A64 /* LoginVC.swift in Sources */,
+				9F1BE0C61F1EFE2A00D71A64 /* GradientView.swift in Sources */,
 				9FD880101F1EDD910045A67E /* ViewController.swift in Sources */,
+				9F1BE0CD1F1F0B3600D71A64 /* CreateAccountVC.swift in Sources */,
+				9F1BE0D41F20419200D71A64 /* UserDataService.swift in Sources */,
+				9F1BE0D21F20352800D71A64 /* RoundedButton.swift in Sources */,
+				9F1BE0C91F1F051900D71A64 /* Constants.swift in Sources */,
+				9F1BE0D01F1F5DEA00D71A64 /* AuthService.swift in Sources */,
 				9FD8800E1F1EDD910045A67E /* AppDelegate.swift in Sources */,
 				9F1BE0BD1F1EF73400D71A64 /* SWRevealViewController.m in Sources */,
 			);
