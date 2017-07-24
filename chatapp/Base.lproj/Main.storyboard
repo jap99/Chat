@@ -206,9 +206,9 @@
                                             <constraint firstAttribute="width" constant="250" id="EcV-At-M1F"/>
                                             <constraint firstAttribute="height" constant="45" id="Fjc-5Z-lam"/>
                                         </constraints>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXU-SP-Hvc">
                                         <rect key="frame" x="0.0" y="45" width="250" height="0.5"/>
@@ -223,7 +223,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="AAR-Rh-fb3"/>
                                         </constraints>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
@@ -342,7 +342,7 @@
                                             <constraint firstAttribute="width" constant="250" id="e8I-gR-4YI"/>
                                             <constraint firstAttribute="height" constant="45" id="n3y-nS-S1j"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                     </textField>
@@ -360,7 +360,7 @@
                                             <constraint firstAttribute="height" constant="40" id="HKW-Ci-19S"/>
                                             <constraint firstAttribute="width" constant="250" id="rhd-d5-S9g"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardType="emailAddress"/>
                                     </textField>
@@ -377,7 +377,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="oce-pe-W3j"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
@@ -643,12 +643,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="7f1-Ni-PDW" id="A5f-Qb-V2g"/>
                         <outlet property="menuBtn" destination="Ucz-Nr-nly" id="YvE-dc-5ug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAu-1E-Yii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="637.33133433283365"/>
+            <point key="canvasLocation" x="1326" y="925"/>
         </scene>
     </scenes>
     <resources>
