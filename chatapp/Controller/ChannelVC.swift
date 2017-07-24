@@ -116,5 +116,20 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // when we select a row we're going to save the selected channel into our messageService variable selectedChannel; then notify the chatVC that we've selected a channel; then dismiss the menu
+        
+        let channel = MessageService.instance.channels[indexPath.row]
+        MessageService.instance.selectedChannel = channel
+        
+        // shoot of notif that channel's been selected
+        NotificationCenter.default.post(name: (NOTIF_CHANNEL_SELECTED), object: nil)
+        
+        // when we select an item, it closes
+        self.revealViewController().revealToggle(animated: true)
+        
+        // now add an observer in chatVC 
+    }
+    
     
 }
