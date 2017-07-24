@@ -64,6 +64,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-e2-bwR">
                                 <rect key="frame" x="277" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelBtnPressed:" destination="m94-SK-Nck" eventType="touchUpInside" id="8cC-aL-w9o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-IA-r6z">
                                 <rect key="frame" x="111" y="593" width="46" height="33"/>
@@ -87,7 +90,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="l9M-6p-2sW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelcell" id="l9M-6p-2sW" customClass="ChannelCell" customModule="chatapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l9M-6p-2sW" id="BlU-At-fOy">
@@ -107,6 +110,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="HNb-Jj-pDx" id="Vql-lq-e1c"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -139,6 +145,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="jfX-IA-r6z" id="aY3-CU-IXY"/>
+                        <outlet property="tv" destination="Jwg-9z-QO4" id="0fM-7v-AfH"/>
                         <outlet property="userImg" destination="MW6-Ar-ab6" id="93z-pJ-aEP"/>
                         <segue destination="Bfi-FO-w12" kind="show" identifier="toLogin" id="ebo-QR-rid"/>
                     </connections>

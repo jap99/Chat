@@ -8,20 +8,26 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tv: UITableView!
     @IBOutlet weak var loginBtn: UIButton!
-    @IBAction func prepareForUnwindSegue(segue: UIStoryboardSegue){
-        
-    }
-    
+    @IBAction func prepareForUnwindSegue(segue: UIStoryboardSegue){ }
     @IBOutlet weak var userImg: CircleImage!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tv.delegate = self; tv.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         
        listenForNotif()
+        SocketService.instance.getChannel { (success) in
+            if success {
+                self.tv.reloadData()
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,6 +42,14 @@ class ChannelVC: UIViewController {
     @objc func userDataDidChange(_ notif: Notification) {
        setupUserInfo()
     }
+    
+    @IBAction func addChannelBtnPressed(_ sender: Any) {
+        
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         
@@ -66,4 +80,31 @@ class ChannelVC: UIViewController {
         }
     }
 
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tv.dequeueReusableCell(withIdentifier: "channelcell", for: indexPath) as? ChannelCell {
+            
+            let channel = MessageService.instance.channels[indexPath.row]
+            cell.configureCell(channel: channel)
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+  
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.channels.count 
+    }
+    
+    
+    
 }
