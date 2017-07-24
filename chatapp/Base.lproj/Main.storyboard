@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
@@ -634,28 +637,54 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fgq-QW-1bO">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gWF-vi-U8e"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-AP-Tuo">
+                                <rect key="frame" x="305" y="632" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="U6d-ir-NkG"/>
+                                </constraints>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendButtonPressed:" destination="CW9-nw-gCM" eventType="touchUpInside" id="7Sp-bo-Sbm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fgq-QW-1bO" secondAttribute="trailing" id="8sZ-XU-YVL"/>
                             <constraint firstItem="b1l-gp-KsU" firstAttribute="leading" secondItem="ZbJ-10-su0" secondAttribute="leading" id="B2J-XF-VBY"/>
+                            <constraint firstItem="yzZ-uF-JSu" firstAttribute="top" secondItem="Fgq-QW-1bO" secondAttribute="bottom" id="Hhn-UG-apW"/>
                             <constraint firstAttribute="trailing" secondItem="b1l-gp-KsU" secondAttribute="trailing" id="XkU-Ew-0Zk"/>
                             <constraint firstItem="b1l-gp-KsU" firstAttribute="top" secondItem="ZbJ-10-su0" secondAttribute="top" id="inN-7j-PPf"/>
+                            <constraint firstItem="tI0-AP-Tuo" firstAttribute="centerY" secondItem="Fgq-QW-1bO" secondAttribute="centerY" id="lVV-sh-IoM"/>
+                            <constraint firstItem="Fgq-QW-1bO" firstAttribute="leading" secondItem="ZbJ-10-su0" secondAttribute="leading" id="maw-oz-B7d"/>
+                            <constraint firstAttribute="trailing" secondItem="tI0-AP-Tuo" secondAttribute="trailing" id="sjb-Ym-eJP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="7f1-Ni-PDW" id="A5f-Qb-V2g"/>
                         <outlet property="menuBtn" destination="Ucz-Nr-nly" id="YvE-dc-5ug"/>
+                        <outlet property="messageTxtBox" destination="Fgq-QW-1bO" id="KDy-F5-AtP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAu-1E-Yii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="925"/>
+            <point key="canvasLocation" x="1325.5999999999999" y="924.28785607196414"/>
         </scene>
     </scenes>
     <resources>
         <image name="addChannelButton" width="22" height="22"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>

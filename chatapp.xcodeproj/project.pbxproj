@@ -19,6 +19,7 @@
 		9F1BE0D21F20352800D71A64 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0D11F20352800D71A64 /* RoundedButton.swift */; };
 		9F1BE0D41F20419200D71A64 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE0D31F20419200D71A64 /* UserDataService.swift */; };
 		9F57A07E1F2643EF00451AAC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57A07D1F2643EF00451AAC /* Message.swift */; };
+		9F57A0801F2677DF00451AAC /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57A07F1F2677DF00451AAC /* KeyboardBoundView.swift */; };
 		9F9417431F255CBA00C9DDD8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9417421F255CBA00C9DDD8 /* CircleImage.swift */; };
 		9F9417461F257E2000C9DDD8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9417441F257E2000C9DDD8 /* ProfileVC.swift */; };
 		9F9417471F257E2000C9DDD8 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9417451F257E2000C9DDD8 /* ProfileVC.xib */; };
@@ -53,6 +54,7 @@
 		9F1BE0D11F20352800D71A64 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		9F1BE0D31F20419200D71A64 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		9F57A07D1F2643EF00451AAC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9F57A07F1F2677DF00451AAC /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		9F9417421F255CBA00C9DDD8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		9F9417441F257E2000C9DDD8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9F9417451F257E2000C9DDD8 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				9F1BE0D11F20352800D71A64 /* RoundedButton.swift */,
 				9FE14FBC1F2169AB00F3FE09 /* AvatarCell.swift */,
 				9F94174D1F25992300C9DDD8 /* ChannelCell.swift */,
+				9F57A07F1F2677DF00451AAC /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				9F1BE0C21F1EF98C00D71A64 /* ChatVC.swift in Sources */,
 				9F1BE0C41F1EF99E00D71A64 /* ChannelVC.swift in Sources */,
+				9F57A0801F2677DF00451AAC /* KeyboardBoundView.swift in Sources */,
 				9FE14FBD1F2169AB00F3FE09 /* AvatarCell.swift in Sources */,
 				9F1BE0CB1F1F09F100D71A64 /* LoginVC.swift in Sources */,
 				9F9417461F257E2000C9DDD8 /* ProfileVC.swift in Sources */,
