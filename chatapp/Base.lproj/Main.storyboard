@@ -193,6 +193,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="Bfi-FO-w12" eventType="touchUpInside" id="5O8-34-Xnb"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Atq-10-Xn5">
                                 <rect key="frame" x="62.5" y="165" width="250" height="91"/>
@@ -266,12 +269,18 @@
                                     <action selector="closeButtonPressed:" destination="Bfi-FO-w12" eventType="touchUpInside" id="eYS-kN-pBY"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-fi-Qqx">
+                                <rect key="frame" x="169.5" y="215" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lk7-qj-g9r" firstAttribute="centerX" secondItem="vqb-23-nK1" secondAttribute="centerX" id="4d3-dp-e7d"/>
+                            <constraint firstItem="IeI-fi-Qqx" firstAttribute="centerX" secondItem="vqb-23-nK1" secondAttribute="centerX" id="9Sj-eQ-Qbl"/>
                             <constraint firstItem="Atq-10-Xn5" firstAttribute="centerX" secondItem="vqb-23-nK1" secondAttribute="centerX" id="BwI-Gm-BaD"/>
                             <constraint firstItem="lk7-qj-g9r" firstAttribute="top" secondItem="xzc-9f-guT" secondAttribute="bottom" constant="65" id="Fsu-wE-U3x"/>
+                            <constraint firstItem="IeI-fi-Qqx" firstAttribute="centerY" secondItem="vqb-23-nK1" secondAttribute="centerY" constant="-100" id="GCA-r6-oO6"/>
                             <constraint firstItem="aZE-P8-ZWe" firstAttribute="centerX" secondItem="Atq-10-Xn5" secondAttribute="centerX" id="Kur-xp-oTx"/>
                             <constraint firstItem="4ip-mj-OWW" firstAttribute="centerX" secondItem="aZE-P8-ZWe" secondAttribute="centerX" id="LKP-MM-Oma"/>
                             <constraint firstItem="iAa-jc-a8r" firstAttribute="top" secondItem="xzc-9f-guT" secondAttribute="bottom" constant="8" id="LuF-dR-btO"/>
@@ -282,6 +291,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="nIs-d7-027" id="SdD-Az-Esj"/>
+                        <outlet property="spinner" destination="IeI-fi-Qqx" id="vav-yH-iZb"/>
+                        <outlet property="usernameTxt" destination="A6i-aN-kq0" id="69G-uK-k2n"/>
                         <segue destination="seP-J3-mLK" kind="show" identifier="toCreateAccount" id="gpC-Xc-mKG"/>
                     </connections>
                 </viewController>
