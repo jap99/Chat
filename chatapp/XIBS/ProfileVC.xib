@@ -45,7 +45,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gVq-oc-Vyo">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gVq-oc-Vyo" customClass="CircleImage" customModule="chatapp" customModuleProvider="target">
                             <rect key="frame" x="113" y="81" width="100" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="4Ef-Fu-REW"/>
